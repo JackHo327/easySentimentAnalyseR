@@ -107,11 +107,7 @@ tweets_corpus <-  VCorpus(VectorSource(tweets_list)) %>% # generate a volatile c
 
 After cleaning the corpus, then you are able to generate a word cloud and calculate the sentiment scores of the searching topic by changing several parameters.
 
-Here is an example that I posted on [RPubs](rpubs.com) for testing purpose:
-
-<p align="center"><iframe width="100%" height="750" src="http://rpubs.com/JackHo/easySentimentAnalyseR" frameborder="1" ></iframe></p>
-
-(This process and the last process may need to be iterated for a couple of times until user find some sort of interesting )
+Here is an example that I posted on [RPubs](http://rpubs.com/JackHo/easySentimentAnalyseR) for testing purpose.
 
 ## System Info
 
