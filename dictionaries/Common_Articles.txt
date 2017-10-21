@@ -1,0 +1,4 @@
+StandardWords
+a
+an
+the

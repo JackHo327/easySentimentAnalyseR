@@ -1,0 +1,10 @@
+pos <- readLines("./dictionaries/Positive-Words.txt")
+neg <- readLines("./dictionaries/Negative-Words.txt")
+stopwords <- readLines("./dictionaries/standard_stop_wordList.txt")
+adjs <- readLines("./dictionaries/Common_Adjs.txt")
+advs <- readLines("./dictionaries/Common_Adverbs.txt")
+articles <- readLines("./dictionaries/Common_Articles.txt")
+preps <- readLines("./dictionaries/Common_Preps.txt")
+verbs <- readLines("./dictionaries/Common_Verbs.txt")
+useless_words <- c(stopwords,adjs,advs,articles,preps,verbs)
+
