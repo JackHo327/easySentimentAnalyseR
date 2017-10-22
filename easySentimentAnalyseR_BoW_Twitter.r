@@ -17,8 +17,8 @@ source("./funcs.r")
 source("./load_dictionaries.r")
 
 
-search_str = "the-topic_you_wanna_search"
-num_twts = num_of_tweets # the number of tweets you wanna search
+search_str = "19th National Congress"
+num_twts = 500 # the number of tweets you wanna search
 lang = "en" # lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
 
@@ -114,3 +114,15 @@ df
 tweet_char_vec <- sapply(tweets_corpus, '[', "content") %>% unlist %>% as.character() %>% paste(collapse = ' ')
 
 tweet_sent <- get_nrc_sentiment(tweet_char_vec)
+
+tweet_tb <- tweet_sent %>% data.table() %>% t
+
+tweet_tb_rownames <- rownames(tweet_tb)
+
+tweet_tb <- tweet_tb %>% data.table()
+
+colnames(tweet_tb) <- "sent_score"
+
+rownames(tweet_tb) <- tweet_tb_rownames
+
+ggplot(tweet_tb, aes(x=reorder(rownames(tweet_tb), sent_score),y=sent_score)) + geom_bar(stat='identity', fill = brewer.pal(n = 10, name = "Spectral")) + ggtitle(label = "Sentiment Scores", subtitle = "based on NRC dictionary") + labs(x = "category") + theme_bw()

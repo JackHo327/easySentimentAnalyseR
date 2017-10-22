@@ -182,6 +182,6 @@ rownames(tweet_tb) <- tweet_tb_rownames
 ggplot(tweet_tb, aes(x=reorder(rownames(tweet_tb), sent_score),y=sent_score)) + geom_bar(stat='identity', fill = brewer.pal(n = 10, name = "Spectral")) + ggtitle(label = "Sentiment Scores", subtitle = "based on NRC dictionary") + labs(x = "category") + theme_bw()
 ```
 
-Also, you may try other dictionaries such "bing", "afinn" and "syuzhet", and calculate the sentiment scores respectively to get a comprehensive analysis about the sentiment of your corpus.
+Also, you may try other dictionaries such as "bing", "afinn" and "syuzhet", and calculate the sentiment scores respectively to get a comprehensive analysis about the sentiment of your corpus.
 
-It's about the end of this demo and hope you all will enjoy it!!
+It's about the end of this demo and hope you all enjoy it!!
