@@ -2,3 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+*.html
+rsconnect/
+
+easySentimentAnalyseR_BoW_Twitter_files/
+
+easySentimentAnalyseR_BoW_Twitter_cache/

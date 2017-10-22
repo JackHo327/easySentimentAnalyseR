@@ -1,6 +1,6 @@
 # easySentimentAnalyseR
 
-`easySentimentAnalyseR` contains a series of [bag-of-words](https://en.wikipedia.org/wiki/Bag-of-words_model)-based (BoW-based) text mining templates in r. These templates can be used to do quick and simple sentiment analysis from several popular social networks, such as [Twitter](https://www.twitter.com), [Facebook](https://www.facebook.com), [LinkedIn](https://www.linkedin.com), [Google+](https://plus.google.com) and [Tumblr](https://www.tumblr.com).
+[`easySentimentAnalyseR`](https://github.com/JackHo327/easySentimentAnalyseR) contains a series of [bag-of-words](https://en.wikipedia.org/wiki/Bag-of-words_model)-based (BoW-based) text mining templates in r. These templates can be used to do quick and simple sentiment analysis from several popular social networks, such as [Twitter](https://www.twitter.com), [Facebook](https://www.facebook.com), [LinkedIn](https://www.linkedin.com), [Google+](https://plus.google.com) and [Tumblr](https://www.tumblr.com).
 
 :rocket:*Under the current development condition and plan, scripts for Twitter will be 1stly provided to do such simple and quick sentiment analysis.*:rocket:
 
