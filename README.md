@@ -14,10 +14,15 @@ Based on my understanding, if you want to fetch the tweets from Twitter and have
 1. Then, you could log on its [app portal](https://apps.twitter.com/).
 1. Next, you need to create a Twitter application.
 1. Then, you should go to the `Keys and Access Token` panel and record all your information corresponding to your current application.
-     4.1 **Customer Key**
-     4.2 **Customer Secret**
-     4.3 **Access Token**
-     4.4 **Access Token Secret**
+
+      4.1 **Customer Key**
+
+      4.2 **Customer Secret**
+
+      4.3 **Access Token**
+
+      4.4 **Access Token Secret**
+
 Here, I put a good video below, and it can help you register such an account, or, you could read its official [instructions](https://developer.twitter.com/en/docs/basics/getting-started).
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/CVz1MjqTXMg" frameborder="0" allowfullscreen></iframe></p>

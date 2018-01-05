@@ -17,22 +17,25 @@ source("./funcs.r")
 source("./load_dictionaries.r")
 
 
-search_str = "19th National Congress"
-num_twts = 500 # the number of tweets you wanna search
+search_str = "cloudera"
+num_twts = 5000 # the number of tweets you wanna search
 lang = "en" # lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
+# SOMETIMES NEEDS TO CHANGE LOCALE
+# Sys.setlocale("LC_ALL","CHINESE") 
 
 # pay attention to the rate limiting 
 # see --> (https://developer.twitter.com/en/docs/basics/rate-limiting)
 # ?searchTwitteR to see other potential args
-your_tweets <- searchTwitter(searchString = search_str, n = num_twts, lang = lang, since = "2017-10-20", until = "2017-10-21")
+your_tweets <- searchTwitter(searchString = search_str, n = num_twts, lang = lang, since = "2017-12-20", until = "2018-01-03")
 
 
 # fetch all the texts
 tweets_list <- sapply(your_tweets, function(x){
       x$getText() %>% 
             str_replace_all(pattern = "http(s)?.*",replacement = " ") %>% # clear urls beforehand
-            str_replace_all(pattern = "^RT|@([a-zA-Z0-9:]*\\s+){1}", replacement = "") # clear @users
+            str_replace_all(pattern = "^RT|@([a-zA-Z0-9:]*\\s+){1}", replacement = "") %>% # clear @users
+            str_replace_all("[^a-zA-Z\\s'-]","") %>% str_trim()
 })
 
 

@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-*This is a demo for my side project [easySentimentAnalyseR](https://jackho327.github.io/easySentimentAnalyseR/)*
+*This is a demo for my side project* <a href="https://jackho327.github.io/easySentimentAnalyseR/", target="_top">easySentimentAnalyseR</a>
 
 ```{r message=FALSE, warning=FALSE, echo=FALSE, results='hide'}
 # this simple sentiment AnalyseR is based on bag-of-words(BoW)
